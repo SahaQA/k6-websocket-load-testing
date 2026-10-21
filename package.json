@@ -1,16 +1,16 @@
 {
-  "name": "websocket-loadtest",
+  "name": "k6-websocket-load-testing",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "WebSocket load testing with k6 and Node.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test:ws": "node loadtest.js",
+    "test:k6:2vu": "k6 run k6-test-2vu.js",
+    "test:k6:10vu": "k6 run k6-test-10vu.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "dependencies": {
-    "k6": "^0.0.0",
-    "ws": "^8.20.0"
+    "ws": "^8.22.0"
   }
 }
