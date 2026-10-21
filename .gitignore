@@ -1,0 +1,19 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+__MACOSX/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Generated performance results
+results/
+reports/
